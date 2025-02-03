@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HSR-MOTORS LEAD MANAGEMENT SYSTEM</title>
+</head>
+<body>
+    <header>
+        <h1 class="heading">
+            HSR MOTORS LEAD MANAGEMENT SYSTEM
+        </h1>
+        <nav>
+          <button onclick="sectionopen('leadlisting')">Lead Listing</button>
+          <button onclick="sectionopen('leaddetails')">Lead Details</button>
+          <button onclick="sectionopen('leadmanagement')">Lead Management</button>
+          <button onclick="sectionopen('dashboard')">Dashboard</button>
+        </nav>
+    </header>
+    <main>
+        <!-- 1 -->
+        <section class="sections" id="leadlisting">
+            <h2>Lead Listing</h2>
+            <table>
+               <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Email</th>
+                    <th>city</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+               </thead>
+               <tbody id="leadlistingbody"></tbody>
+            </table>
+        </section>
+
+        <!-- 2 -->
+        <section class="sections" id="leaddetails">
+            <h2>Lead Details</h2>
+            <div>
+                <p>Name   : <span id="leadName">N/A</span> </p>
+                <p>Email  : <span id="leadEmail">N/A</span></p>
+                <p>contact  : <span id="leadcontact">N/A</span></p>
+                <p>city : <span id="leadcity">N/A</span></p>
+                <p>Status : <span id="leadStatus">N/A</span></p>
+            </div>
+        </section>
+
+        <!-- 3 -->
+        <section class="sections" id="leadmanagement">
+            <h2>Lead Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="leadmanagementbody"></tbody>
+            </table>
+        </section>
+
+        <!-- 4 -->
+        <section class="sections" id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="total">Total : <span id="total">0</span></div>
+            <div class="total">New : <span id="new">0</span></div>
+            <div class="total">Contacted : <span id="contacted">0</span></div>
+            <div class="total">Not Intrested : <span id="notintrested">0</span></div>
+            <canvas id="chart"></canvas>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js">
+    </script>
+</body>
+</html>

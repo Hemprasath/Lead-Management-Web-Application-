@@ -1,0 +1,88 @@
+body{
+    background-color: rgba(54, 51, 51, 0.493);
+    color: rgba(249, 249, 249, 0.947);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgba(127, 255, 212, 0.938);
+    padding: 20px;
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+}
+button{
+    color: rgb(2, 104, 2);
+    background-color: rgba(153, 225, 45, 0.755);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px rgba(16, 17, 17, 0.764);
+}
+button:hover{
+    background-color: rgb(43, 229, 22);
+   
+    transition-duration: 0.5s;
+}
+
+button:active{
+    transform: translatey(5px);
+    box-shadow: none;
+}
+
+.heading2{
+    text-align: center;
+    font-size: 25px;
+}
+main{
+    padding: 20px;
+}
+ 
+section{
+    display: none;
+}
+section:not(.sections){
+    display: block;
+} 
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,th,td{
+    border: 2px solid;
+}
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+
+.total{
+    padding: 10px;
+    text-align: center;
+    border: solid;
+    width: 200px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: black;
+    display: flex;
+}
+
+#dashboard{
+    justify-items: center;
+}
